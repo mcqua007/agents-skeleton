@@ -239,4 +239,4 @@ automatically gets the same instructions.
 
 ## License
 
-<!-- TODO: Choose a license. -->
+[MIT](LICENSE)
