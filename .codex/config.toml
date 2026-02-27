@@ -1,0 +1,23 @@
+# Codex CLI — Project Configuration
+# https://github.com/openai/codex
+#
+# This file provides project-scoped overrides for Codex CLI.
+# Codex reads AGENTS.md natively as its instruction file.
+# Precedence: CLI flags > project config > user config > system config.
+
+# --- Model ---
+# Uncomment to pin a specific model for this project:
+# model = "o4-mini"
+
+# --- Approval Policy ---
+# Options: "suggest" | "auto-edit" | "full-auto"
+# approval_policy = "suggest"
+
+# --- Sandbox Policy ---
+# Options: "strict" | "permissive"
+# sandbox_policy = "strict"
+
+# --- Project Doc ---
+# Codex reads AGENTS.md by default. Add fallback filenames if needed:
+# project_doc_fallback_filenames = ["TEAM_GUIDE.md"]
+# project_doc_max_bytes = 32768

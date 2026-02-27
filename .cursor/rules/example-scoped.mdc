@@ -1,0 +1,15 @@
+---
+description: "Example scoped rule — customize the glob pattern for your project"
+globs: "src/components/**/*.tsx,src/components/**/*.ts"
+---
+
+# Component Guidelines
+
+<!-- This is an example of a glob-scoped Cursor rule.
+     It only activates when working on files matching the glob pattern above.
+     Customize the globs and content for your project's needs. -->
+
+- Components should be self-contained with clear props interfaces.
+- Prefer composition over inheritance.
+- Extract reusable logic into custom hooks or utility functions.
+- Keep component files focused — one primary export per file.
