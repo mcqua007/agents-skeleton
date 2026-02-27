@@ -199,19 +199,19 @@ directory (`.claude/rules/`, `.cursor/rules/`, `.windsurf/rules/`, etc.)
 contains files that reference the shared docs rather than duplicating them.
 
 ```
-                    ┌─────────────────────┐
-                    │     AGENTS.md       │  ← Single source of truth
-                    │   CONVENTIONS.md    │     for agent instructions
-                    │  ARCHITECTURE.md    │
-                    └────────┬────────────┘
-                             │
-          ┌──────────────────┼──────────────────┐
-          │                  │                   │
-    ┌─────▼─────┐    ┌──────▼──────┐    ┌───────▼──────┐
-    │ .claude/   │    │ .cursor/    │    │ .windsurf/   │  ...
-    │ rules/     │    │ rules/      │    │ rules/       │
-    │ (pointers) │    │ (pointers)  │    │ (pointers)   │
-    └────────────┘    └─────────────┘    └──────────────┘
+                 ┌──────────────────────┐
+                 │  AGENTS.md           │
+                 │  CONVENTIONS.md      │  ← Single source of truth
+                 │  ARCHITECTURE.md     │
+                 └──────────┬───────────┘
+                            │
+        ┌───────────────────┼───────────────────┐
+        │                   │                   │
+  ┌─────▼─────┐        ┌────▼────┐       ┌──────▼──────┐
+  │  .claude/  │       │ .cursor/│       │ .windsurf/  │  ...
+  │  rules/    │       │ rules/  │       │ rules/      │
+  │ (pointers) │       │(pointer)│       │ (pointers)  │
+  └────────────┘       └─────────┘       └─────────────┘
 ```
 
 **Why this matters:**
